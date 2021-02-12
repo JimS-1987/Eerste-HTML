@@ -1,0 +1,35 @@
+h1{
+    color:rgb(182, 19, 19)
+}
+{
+.black-border {
+        border: 5px solid black;
+  }   
+}
+body{
+    background-color:#15c23a;
+color:#d31010;
+}
+
+
+
+font-family:arial,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+font-size:16px;}
+.black-border{border:black}
+
+
+ a{ color: rgb(195, 195, 230) ;
+    font weight:normal;
+
+line-height:1.6em; 
+
+}
+.container{ with:60%;
+    margin:auto;
+}
+
+.box-1{background-color: darkslategrey;
+color:#fff;}
+ 
+
+body
