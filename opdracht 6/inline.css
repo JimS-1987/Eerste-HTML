@@ -1,0 +1,94 @@
+.center-title {
+  margin: auto;
+  width: auto;
+  padding: 10px;}
+.header {
+  color: aliceblue;
+  border-style: double;
+  border-color: azure;
+  background-color: rgb(15, 29, 56);
+  margin: 0 auto;
+  width: 700px;
+  padding: 10px 10px 10px 300px;
+
+
+}
+.jim.jpg {
+  padding-top: 10px 10px 10px 100px;
+ 
+}                                                                    
+  
+.navigation-links {
+  display: block;
+  list-style-type: none;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-right: 100px;
+  padding-left: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #333;
+  background: position 100px;
+}
+
+
+
+li a {
+  display: inline-block;
+  color: white;
+  background-color: rgb(20, 16, 34);
+  text-align: center;
+  font-weight: 700;
+  font-size:xx-large;
+  font-family: sans-serif;
+  padding: 1%;
+  border: groove;
+  margin: 1%;
+  width: 20%;
+  text-decoration: none;
+}
+li {
+  float: none;
+  inline-size: 0px;
+  display: inline;
+}
+main {
+  background-color: rgb(20, 16, 34);
+  margin: auto;
+  width: 50%;
+  border-style: ridge;
+  border-radius: 1px;
+  background-position: center;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(253, 253, 253);
+}
+
+li a:hover {
+  background-color: rgb(184, 44, 44);
+  color: white;
+}
+
+body {
+  background-color: teal;
+}
+
+
+
+body { background-color: rgb(17, 41, 39); }
+
+@media screen and (min-width: 1024px) {
+        body {
+                background-color: rgb(50, 50, 56);
+                
+        }
+        main {color: orange;
+        }
+        li a {font-size: smaller;}
+             {line-height: 4px;}
+            
+            
+            
+
