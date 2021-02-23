@@ -13,7 +13,7 @@
 }
 .title {
   margin: auto;
-  width: 400px;
+  width: 600px;
   color: aliceblue;
   border-style: double;
   border-color: azure;
@@ -76,11 +76,18 @@ body { background-color: rgb(17, 41, 39); }
 footer {border-color: blanchedalmond;border-style: double;padding: 5px; font-size: large; font-display:grid;
    background-color: rgb(27, 55, 56);
    margin:auto ;color:white;
-   width:300px;}
+   width:320px;}
    
 nav {border-style: dotted;
 border: floralwhite;}
 
+.img2{
+    min-width: 320px;
+    padding: auto;
+    height: auto;
+    width: auto;
+   display:grid; }
+            
 
 @media screen and (min-width: 1024px) {
         body {
@@ -108,15 +115,22 @@ border: floralwhite;}
   background-color: rgb(15, 29, 56);
   margin: auto;
   padding:3%;
-  font-size:30px;
+  font-size:60px;
   display: grid;
 }    
  footer {border-color: blanchedalmond;border-style: double;padding: 5px; font-size: large; font-display:grid;
    background-color: rgb(27, 55, 56);
    margin:auto ;color:white;
-   width:300px;}
-       
-        
+   width:320px;}
+
+   .img2{
+    min-width:1%;
+    padding: 0 auto;
+    height: auto;
+    width: auto;
+    margin:auto;
+    display:grid;}
+    
             
 
              
