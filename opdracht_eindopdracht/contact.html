@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Voer hier je gegevens in:</title>
+  </head>
+  <body>
+    <header><h3>
+					The Surfhub,<br/>
+					The place where everything<br />
+					comes toghether.
+				</h3></header>
+
+    <main>
+      
+        
+      <form class="form"name="contact" method="POST" data-netlify="true">
+          
+        <h2>Subscribe here to be up to date <br>
+          to all our events and deals:</h2>
+            <p>
+                <label>Name: <input type="text" name="name" /></label>
+            </p>
+
+            <p>
+                <label>Tel.: <input type="text" name="phone" /></label>
+            </p>
+            
+            <p>
+                <label>Age: <input type="text" name="age" /></label>
+            </p>
+
+            <p>
+                <label>Email: <input type="text" name="email" /></label>
+            </p>
+                <label>Birth date: <input type="date" name="date of birth" /></label>
+            </p>
+
+             <P>
+                <label><input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+             </P>  
+
+             <p>
+                <label>Your board:</label><br>
+                <p><img class="img2" src="surfgear.jpg" alt="surfgear"></p>
+
+                <input type="checkbox" id="short" name="vehicle1" value="short">
+                <label for="short"> Short</label><br>
+
+                <input type="checkbox" id="Arabisch" name="Arabische keuken" value="Arabisch">
+                <label for="Arabisch"> Fish</label><br>
+
+                <input type="checkbox" id="Italiaans" name="Italiaans" value="Italiaans">
+                <label for="vehicle3"> Fun board</label><br>
+
+                <input type="checkbox" id="Spaans" name="Spaans" value="Spaans">
+                <label for="Spaans"> long board</label><br>
+
+                <input type="checkbox" id="Italiaans" name="Italiaans" value="Italiaans">
+                <label for="Italiaans"> Nose rider</label><br>
+            </p>
+
+            <p>
+                 <input type="color" id="fav.kleur" name="fav.kleur" value="color">
+                 <label for="fav.kleur">fav. kleur</label>
+            </p>
+
+            <P>
+                 <label for="biografie">Biografie</label><br>
+                 <textarea id="biografie" rows="5" cols="65"> </textarea>
+
+            </P>
+            
+            <p> 
+                <label for="myfile">Upload pics:</label>
+                <input type="file" id="myfile" name="myfile">
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </p>
+
+
+      </form>
+    </main>
+    
+    <footer>
+      <h1> <a href="index.html">home</a></h1>
+    </footer>
+  </body>
+</html>
