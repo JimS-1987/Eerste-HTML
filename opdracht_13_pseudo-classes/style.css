@@ -1,0 +1,59 @@
+.parent {
+    background-color: rgb(155, 179, 157);
+}
+header {
+    display: flex;
+    font-size: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    color: black;
+    font-size: 100px;
+    margin-left: 25%;
+    padding-left: 80px;
+}
+
+nav {
+    background-color: rgb(1, 28, 82);
+}
+
+.navi-links {
+    display: flex;
+    font-size: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+:hover[href="https://www.ajax.nl/"]
+{
+    color: cadetblue;
+}
+
+:active [href="https://www.zalando.nl/"]
+{
+    color: red;
+    font-style: italic;
+}
+:visited[href="https://nl.surf-forecast.com/"]
+{
+    color: yellow;
+}
+#schrijf {
+    color: green;
+    font-size: 20px;
+    background-color: rgb(94, 127, 161);
+}
+.current_page {
+    background-color: rgb(45, 69, 92);
+}
+.current_page:hover {
+    color: red;
+    font-style: oblique;
+}
+#search:focus {
+    border: aqua 10px;
+    border-style: groove;
+}
