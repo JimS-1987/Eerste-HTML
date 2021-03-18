@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
+@import"./variables";
+
+@mixin font-style($fcolor , $weight){
+    color:darkgray ;
+    font-size: 20px;
+    font-weight: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:$fcolor;
+    font-weight: $weight;
+  
+}
+
+body {
+  color:$Color;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  background-color:$whtbackgroundClr;
+}
+
+
+
+/* Pas alleen de onderstaande regels aan */
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding:$padding20;
+  background-color:$backgroundClr;
+  height: 120px;
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__logo {
+  width: auto;
+  padding-top: 20px;
+  height: 7.5em;
+
+ &__img{
+  width: auto;
+  padding-top: 20px;
+  height: 7.5em;
+}
+}
+.title--title__left {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+
+
+}
+
+
+/* Hero Section */
+.hero {
+ padding: 20px;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: $backgroundClr;
+  @include font-style(black,300px )
+}
+
+.hero__img{
+  display: block;
+  height: auto;
+  width: 15.5em;
+  
+  
+}
+
+
+.hero__text {
+  display:inline-block;
+  max-width: 700px;
+  text-align: center;
+  padding:$padding20;
+  margin-left: 31%;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+
+}
+.hero__btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border: $primaryBtn;
+  transition: all 0.3s ease-in;
+}
+.hero__btn:hover,
+.hero__btn:focus {
+  transform: translate(0px, -2px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-out;
+}
+/* Featured Section */
+.featured {
+  padding:$padding20;
+  display: flex;
+  flex-wrap: wrap;
+  @include font-style(black,300px )
+}
+.featured__line {
+  width: 3em;
+  height: 1px;
+  background-color: #000;
+  margin-right: 1em;
+}
+.featured__title {
+  text-transform: uppercase;
+}
+.featured__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured__image--img {
+  width: 300px;
+}
+
+.featured__text{
+  max-width: 700px;
+  text-align: center;
+  padding: $padding20;
+}
+.featured__text--p {
+  text-align: justify;
+  padding: 20px;
+  line-height: 1.4em;
+}
+
+
+/* About Section */
+.about {
+  background-color:$backgroundClr;
+  padding: $padding20;
+   @include font-style(black,300px )
+}
+.about__text {
+  max-width: 700px;
+  text-align: center;
+  padding: $padding20;
+}
+.about__text p {
+  text-align: justify;
+  padding-bottom: 1em;
+  line-height: 1.4em;
+}
+
+.about__wrapper {
+  display: flex;
+}
+
+.about__video--wrapper {
+  position: relative;
+  padding-bottom: 33.25%;
+  overflow: hidden;
+  align-self: center;
+  flex: 2 0 55%;
+  margin: 1.4em 0;
+}
+
+.about__video--wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact Section */
+.contact {
+  padding:$padding20;
+}
+.contact__wrapper .contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact__form--wrapper,
+.contact__wrapper {
+  padding:$padding20;
+}
+
+.copy--wrapper {
+  padding-left: 20px;
+
+&__text{
+  font-weight: 500;
+}
+}
+.contact__form {
+  display: flex;
+}
+.contact__form input:first-child {
+  flex: 1 0 80%;
+  background-color: transparent;
+}
+.contact__form input:last-child {
+  flex: 1 0 20%;
+  border-left: 0;
+  cursor: pointer;
+  background-color:$backgroundClr;
+  transition: all 0.25s ease;
+}
+.contact__input {
+  padding: 10px;
+  border: 1px solid #000;
+}
+#submit__contact:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.25s ease;
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+}

@@ -1,0 +1,16 @@
+$Color: #090b08;
+$primaryBtn:solid 1px #000;
+$backgroundClr:#c0eea9;
+$whtbackgroundClr:#ecffe9;
+$padding20: padding 20px;
+
+
+@mixin font-style($fcolor , $weight){
+    color:darkgray ;
+    font-size: xx-large;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:$fcolor;
+    font-weight: $weight;
+  
+}
