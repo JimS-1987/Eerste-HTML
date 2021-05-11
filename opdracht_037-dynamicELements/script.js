@@ -1,26 +1,28 @@
-const aniBut = document.querySelectorAll("big-five-list-item .big-five-button");
-const seenAnimals = document.querySelector(".spotted-animals-list");
+const animalButtons = document.querySelectorAll(".big-five-button");
+const big5 = document.querySelector(".big-five-list")
+const makeSeen = document.querySelector(".big-five-list-item");
+const spotAnimal = document.getElementById("spotted-animals-list")
+const deleteFirst = document.getElementById("remove-first-item-button")
+const parent = document.getElementById("spotted-animals-list").getElementsByTagName("ul")[0];
+const deleteAll = document.getElementById("remove-all-button")
 
-//const makeSeen = document.querySelector(".big-five-list-item");
 
-Array.from(aniBut).forEach(function (btn) {
-
-  btn.addEventListener("click", function (e) {
-
-    const li = e.target.parentElement;
-
-    li.parentNode.addChild(li)
+Array.from(animalButtons).forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const newItem = document.createElement("li")
+    newItem.innerHTML = e.target.textContent
+    spotAnimal.append(newItem)
   });
 });
+deleteFirst.addEventListener("click", (e) => {
+  if (spotAnimal.children[0]) {
+    spotAnimal.children[0].remove()
+  }
+})
 
 
-
-seenAnimals.classList.add(aniBut);
-
-
-
-
-
-
-//aniBut.addEventListener("click",sawAnimal);
-//console.log()
+deleteAll.addEventListener("click", (e) => {
+  while (spotAnimal.children[0]) {
+    spotAnimal.children[0].remove()
+  }
+})
